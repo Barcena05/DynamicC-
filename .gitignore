@@ -1,6 +1,7 @@
 # Ignorar todos los archivos en la carpeta bin y obj
 bin/
 obj/
+obj/Debug/
 
 # Ignorar todos los archivos excepto los scripts en la raíz y subdirectorios
 
