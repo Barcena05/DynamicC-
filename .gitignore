@@ -1,0 +1,6 @@
+# Ignorar todos los archivos en la carpeta bin y obj
+bin/
+obj/
+
+# Ignorar todos los archivos excepto los scripts en la raíz y subdirectorios
+
