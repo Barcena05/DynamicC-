@@ -1,0 +1,15 @@
+g:\Programming\Projects\DynamicC#\bin\Debug\net7.0\DynamicC#.exe
+g:\Programming\Projects\DynamicC#\bin\Debug\net7.0\DynamicC#.deps.json
+g:\Programming\Projects\DynamicC#\bin\Debug\net7.0\DynamicC#.runtimeconfig.json
+g:\Programming\Projects\DynamicC#\bin\Debug\net7.0\DynamicC#.dll
+g:\Programming\Projects\DynamicC#\bin\Debug\net7.0\DynamicC#.pdb
+g:\Programming\Projects\DynamicC#\obj\Debug\net7.0\DynamicC#.csproj.AssemblyReference.cache
+g:\Programming\Projects\DynamicC#\obj\Debug\net7.0\DynamicC#.GeneratedMSBuildEditorConfig.editorconfig
+g:\Programming\Projects\DynamicC#\obj\Debug\net7.0\DynamicC#.AssemblyInfoInputs.cache
+g:\Programming\Projects\DynamicC#\obj\Debug\net7.0\DynamicC#.AssemblyInfo.cs
+g:\Programming\Projects\DynamicC#\obj\Debug\net7.0\DynamicC#.csproj.CoreCompileInputs.cache
+g:\Programming\Projects\DynamicC#\obj\Debug\net7.0\DynamicC#.dll
+g:\Programming\Projects\DynamicC#\obj\Debug\net7.0\refint\DynamicC#.dll
+g:\Programming\Projects\DynamicC#\obj\Debug\net7.0\DynamicC#.pdb
+g:\Programming\Projects\DynamicC#\obj\Debug\net7.0\DynamicC#.genruntimeconfig.cache
+g:\Programming\Projects\DynamicC#\obj\Debug\net7.0\ref\DynamicC#.dll
