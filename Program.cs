@@ -43,20 +43,16 @@ p.LastName("Antonio");
 System.Console.WriteLine(p.FirstName);
 System.Console.WriteLine(p.LastName);
 
-dynamic g = (DFactory.New.Person() as Person).FirstName("Pepe").LastName("Antonio");
+dynamic g = DFactory.New.Person().FirstName("Pepe").LastName("Antonio");
 System.Console.WriteLine(g.FirstName);
 System.Console.WriteLine(g.LastName);
 
-Cuenta c = DFactory.New.Cuenta("Ernesto", 5);
-System.Console.WriteLine(c.propietario);
-System.Console.WriteLine(c.saldo);
-c.Saluda();
-System.Console.WriteLine(c.GetType()); // imprime el tipo de c
-c.SaludaAgain();
-
-
-
-
+// Cuenta c = DFactory.New.Cuenta("Ernesto", 5);
+// System.Console.WriteLine(c.propietario);
+// System.Console.WriteLine(c.saldo);
+// c.Saluda();
+// System.Console.WriteLine(c.GetType()); // imprime el tipo de c
+// c.SaludaAgain();
 
 
 
