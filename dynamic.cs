@@ -1,6 +1,8 @@
 using System.Dynamic;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+//Clase Persona, hereda de DynamicObject y sobreescribe los metodos tryGetMember y trySetMember.
+//Posee un diccionario de atributos para poder insertar nuevos atributos dinamicamente
 public class Persona : DynamicObject
 {
     private Dictionary<string, object> atributos;
@@ -9,6 +11,7 @@ public class Persona : DynamicObject
     {
         atributos = new Dictionary<string, object>();
     }
+    //Indexers para los campos dinamicos
     public object this[string key]
     {
         get
@@ -21,12 +24,14 @@ public class Persona : DynamicObject
         }
     }
 
+    //Sobreescritura del metodo TrySetMember
     public override bool TrySetMember(SetMemberBinder binder, object value)
     {
         string nombreAtributo = binder.Name;
         atributos[nombreAtributo] = value;
         return true;
     }
+    //Sobreescritura del metodo TryGetMember
     public override bool TryGetMember(GetMemberBinder binder, out object? result)
     {
         if (atributos.ContainsKey(binder.Name)) result = atributos[binder.Name];
@@ -39,20 +44,13 @@ public class Persona : DynamicObject
     }
 }
 
+//Clase estatica DFactory, posee un campo New que devuelve una instancia de GBuilder
 public static class DFactory
 {
-    // public static T New<T>()
-    // {
-    //     return Activator.CreateInstance<T>();
-    // }
-
-    // public static T New<T>(params object[] properties)
-    // {
-    //     return (T)Activator.CreateInstance(typeof(T), properties);
-    // }
     public static dynamic New => new GBuilder();
 }
 
+//Clase GBuilder, hereda de DynamicObject y sobreescribe el metodo TryInvokeMember. El parametro de salida es un objeto de tipo DType
 public class GBuilder : DynamicObject
 {
     public GBuilder()
@@ -61,19 +59,22 @@ public class GBuilder : DynamicObject
     }
     public override bool TryInvokeMember(InvokeMemberBinder binder, object?[]? args, out object? result)
     {
-        var type = Type.GetType(binder.Name);
-        System.Console.WriteLine(type);
-        System.Console.WriteLine(binder.ReturnType);
         result = new DType(binder.Name, args);
         return true;
     }
 }
 
+//Clase DType, actua como un envoltorio para crear dinamicamente instancias de tipos conocidos en ejecucion
+//Hereda de DynamicObject y hace uso de reflection para simular el comportamiento del tipo dinamico que se quiere obtener
 public class DType : DynamicObject
 {
+    //Tipo de dato que se quiere simular
     private Type type;
+    //Argumentos pasados al constructor de dicho tipo de datos
     private object[] properties;
+    //TypeInfo del tipo de dato que se quiere simular
     private TypeInfo typeInfo;
+    //Objeto dinamico que representara la instancia del tipo de datos que se quiere simular
     private dynamic obj;
     public DType(string type, object[]? properties)
     {

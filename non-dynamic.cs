@@ -1,14 +1,20 @@
+//Tipos no dinamicos definidos
+
+
+//Clase estatica Factory, posee un campo estatico New que devuelve un objeto de tipo Builder
 public static class Factory
 {
     public static Builder New => new Builder();
     
 }
+//Clase Builder, posee dos campos para devolver un objeto de tipo Person y otro de tipo Persona
 public class Builder
     {
         public Person Person = new Person();
         public Persona Persona = new Persona();
 
     }
+//Clase Person, tipo no dinamico que posee dos campos, FirstName y LastName con sus respectivas propiedades get y set
 public class Person
 {
     public string? FirstName { get; set; }
@@ -40,6 +46,7 @@ public class Person
         }
     }
 }
+//Clase cuenta, posee dos campos (propietario y saldo) y un metodo void (Saluda)
 public class Cuenta{
     public string propietario { get; set; }
     public int saldo { get; set; }

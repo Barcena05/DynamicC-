@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DynamicC#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+809dcd735f9cf860cb19865640d42ea8f103ab42")]
 [assembly: System.Reflection.AssemblyProductAttribute("DynamicC#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DynamicC#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

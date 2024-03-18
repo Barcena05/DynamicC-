@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "44wlgK8hrl3su0Q9GaX7fszUNuPYkAJrfSlPlFEB8aj2KOJ1q691bLb1Pbd2MYvhBF+Y5zpycHNupXck3WyiMw==",
+  "dgSpecHash": "+ZQbn7YsxOWbBSjmGamSnxECRHQtXUEQCLZfKHfA8QXKsr5BnR56dwhC7rfpqsdvkNhkcnMXTH8m7n4tq+CR4w==",
   "success": true,
-  "projectFilePath": "g:\\Programming\\Projects\\DynamicC#\\DynamicC#.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "G:\\Programming\\Projects\\DynamicC#\\DynamicC#.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\3rnst\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\3rnst\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\3rnst\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\3rnst\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
